@@ -1,0 +1,41 @@
+body{
+	background:url(https://i.gifer.com/67N9.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+nav{
+	background-color: : white
+	width:100%;
+	overflow: auto;
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li{
+float: left;
+}
+nav a{
+	width: 120px;
+	top: 0;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background: #ffffff;
+	font-size: 20px;
+	color: balck;
+	padding: 20px 12px;
+	font-family: Arial;
+}
+
+nav a:hover{
+background: violet;
+color:black;
+
+}
