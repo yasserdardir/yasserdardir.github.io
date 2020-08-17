@@ -1,12 +1,13 @@
 body{
 	background:url(https://i.gifer.com/67N9.gif);
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	margin: auto;
+	width: 740px
 }
 nav{
-	background-color: : white
+	background-color: : white;
 	width:100%;
 	overflow: auto;
 
@@ -22,20 +23,106 @@ li{
 float: left;
 }
 nav a{
-	width: 120px;
+	width: 160px;
+
 	top: 0;
 	display: block;
 	text-decoration: none;
 	text-align: center;
 	background: #ffffff;
 	font-size: 20px;
-	color: balck;
+	color: black;
 	padding: 20px 12px;
 	font-family: Arial;
 }
 
 nav a:hover{
-background: violet;
+background: yellow;
 color:black;
 
+}
+button{
+	position:absolute;
+	top:25%;
+	right:10%;
+	box-sizing: content-box;
+	width:500px;
+	height:600px;
+	font-size:50px;
+	background: url(https://i.pinimg.com/originals/12/38/ce/1238ce929648610e1e04547822fa7ec6.jpg);
+	background-size: cover;
+	opacity: .3;
+	background-size: cover;
+	box-shadow:3px 3px yellow;
+	color:yellow;	
+	transition: 1s
+
+}
+button:hover{
+opacity: 1.0;
+cursor: pointer;
+}
+
+.second{
+	position:absolute;
+	top:25%;
+	left:10%;
+	box-sizing: content-box;
+	width:500px;
+	height:600px;
+	font-size:50px;
+	background: url(https://cdn.shopify.com/s/files/1/0888/5218/products/Stone-Forest-F20-BL-Curved-waterwall-with-custom-basin_1200x1200.progressive.jpg?v=1449531518);
+	background-size: cover;
+	opacity: .3;
+	background-size: cover;
+	box-shadow:3px 3px yellow;
+	color:yellow;	
+	transition: 1s
+
+}
+.second:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+.third{
+	position:absolute;
+	top:110%;
+	left:10%;
+	box-sizing: content-box;
+	width:500px;
+	height:600px;
+	font-size:50px;
+	background: url(https://5.imimg.com/data5/VP/LD/MY-2534993/stainless-steel-glass-waterfall-500x500.jpg);
+	background-size: cover;
+	opacity: .3;
+	background-size: cover;
+	box-shadow:3px 3px yellow;
+	color:yellow;	
+	transition: 1s
+	
+}
+.third:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+.fourth{
+	position:absolute;
+	top:110%;
+	right:10%;
+	box-sizing: content-box;
+	width:500px;
+	height:600px;
+	font-size:50px;
+	background: url(https://image.winudf.com/v2/image/Y29tLmluZG9vcmdsYXNzd2F0ZXJmYWxsLm5lbm9rYV9zY3JlZW5fNV8xNTA0Nzk3NzYxXzA2Mw/screen-5.jpg?fakeurl=1&type=.jpg);
+	background-size: cover;
+	opacity: .3;
+	background-size: cover;
+	box-shadow:3px 3px yellow;
+	color:yellow;	
+	transition: 1s
+	
+}
+.fourth:hover{
+	opacity: 1.0;
+	cursor: pointer;
 }
