@@ -51,8 +51,8 @@ footer{
 	.container{
 		grid-template-columns:.2fr .8fr;
 		grid-template-rows: 0.7fr 0.8fr 1.9fr 1.9fr 1.9fr 0.4fr;
-		grid-template-areas: "sidebar nav"
-		"sidebar main"
+		grid-template-areas: "sidebar nav nav nav"
+		"sidebar main main main"
 		"sidebar content1"
 		"sidebar content2"
 		"sidebar content3"
