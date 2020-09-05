@@ -1,305 +1,130 @@
-.container{
-	display: grid;
-	height: 100vh;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: .7fr 1.5fr 1.2fr .2fr;
-	grid-template-areas:
-	 "nav nav nav nav"
-	"sidebar main main main"
-	"sidebar content1 content2 content3"
-	"sidebar footer footer footer"
-}
-
-nav{
-	background-color: crimson;
-	grid-area: nav;
-}
-
-main{
-	background-color: gray;
-	grid-area: main;
-}
-
-#sidebar{
-	background-color: yellow;
-	grid-area: sidebar;
-}
-
-#content1{
-	background-color: #6fffd2;
-	grid-area: content1;
-}
-
-#content2{
-	background-color: #64ffda;
-	grid-area: content2;
-}
-
-
-#content3{
-	background-color: #73ffba;
-	grid-area: content3;
-}
-
-footer{
-	background-color: orange;
-	grid-area: footer;
-}
-
-
-@media only screen and (max-width: 1080px) {
-	.container{
-		grid-template-columns:1fr;
-		grid-template-rows: 0.7fr .5fr 0.8fr 1.6fr 1.6fr 1.6fr 0.2fr;
-		grid-template-areas: "nav"
-		"sidebar"
-		"main "
-		"content1"
-		"content2"
-		"content3"
-		"footer"
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**{
-	margin: 0;
+*{
 	padding: 0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
 	box-sizing: border-box;
 }
-
-html{
-	font-size: 10px;
-	font-family: "Roboto Cn" , sans-serif;
-}
-
+ 
 body{
-	overflow-x: hidden;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3)),  url("waterwall.jpg") center no-repeat;
+
+	font-family: sans-serif;
+	background:  linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3)),  url("waterwall.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
-
+	background-position: center center;
+	background-attachment: fixed;
 }
-
-a{
-	text-decoration: none;
-	color: #eee;
-
-}
-
-
-
-
-.container{
-	max-width: 120rem;
-	width: 95%;
-	margin: 0 auto;
-	flex-wrap: wrap;
-}
-
 
 nav{
-	padding-top: 5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
-	font-size: 1.6rem;
-
+	background: crimson;
+	height: 80px;
+  width:100%;
 }
 
-
-.darnova{
-	font-size: 4rem;
-	font-weight: 300;
-	transform: translateX(-100rem);
-	animation: slideIn .5s forwards;
+label.darnova{
+  color: white;
+  font-size:50px;
+  line-height:80px;
+  padding: 0 100px;
+  font-weight:bold;
 }
 
-
-.darnova span{
-	color: crimson;
-
+label.darnova span{
+	color: white;
 }
-
-.darnova span:hover{
-	font-size: 5rem;
-	font-family: sans-serif;
-	transform: scaleY(2); 
-}
-
-
 
 nav ul{
-	display: flex;
+  float:right;
+  margin-right:20px;
 }
-
-
 
 nav ul li{
-	list-style: none;
-	transform: translateX(100rem);
-	animation: slideIn .5s forwards;
+  display:inline-block;
+  line-height:80px;
+  margin:0 10px;
 
-}
-
-
-nav ul li:nth-child(1){
-	animation-delay: 0s;
-}
-
-nav ul li:nth-child(2){
-	animation-delay: .3s;
-}
-
-nav ul li:nth-child(3){
-	animation-delay: .8s;
-}
-
-nav ul li:nth-child(4){
-	animation-delay: 1.1s;
 }
 
 nav ul li a{
-	padding: 1rem 0;
-	margin: 0 3rem;
-	position: relative;
-	letter-spacing: 2px;
-	border: 1.5px solid crimson;
-	padding: 1rem 2rem;
-	transition: all .5s
-
+  color:white;
+  font-size:20px;
+  padding: 7px 13px;
+  border-radius:3px;
+  text-transform:uppercase;
 }
 
-nav ul li a: last-child{
-	margin-right: 0;
-
-
+a.active,a:hover{
+  background:#f51b67;
+  transition:.5s;
 }
 
-
-nav ul li a::before,
-nav ul li a::after{
-	content: '';
-	position: absolute;
-	width: 1rem;
-	height: 1.5rem;
-	border: 1rem solid;
-	border-color: crimson;
-	transition: all .5s;
+.checkbtn{
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor: pointer;
+  display: none;
 }
 
 
-nav ul li a::before{
-	top: -.8rem;
-	left: -.8rem;
-	border-width: 3px 0 0 3px;
-	transform-origin: left;
-
-}
-
-nav ul li a::after{
-	bottom: -.8rem;
-	right: -.8rem;
-	border-width: 0 3px 3px 0;
-	transform-origin: right;
+#check{
+	display: none;
 }
 
 
-nav ul li a:hover::before,
-nav ul li a:hover::after{
-	
-	width: calc(100% + 1.3rem);
-	height: calc(100% + 1.3rem);
-	border-color: crimson;
-
-
-}
-nav ul li a:hover{
-	
-	background-color: crimson;
-	border-color: crimson;
-
-}
-
-
-@keyframes slideIn{
-	from{
+@media (max-width: 952px){
+	label.darnova{
+		font-size: 30px;
+		padding-left: 50px;
 
 	}
-	to{
-		transform: translateX(0);
+
+	nav ul li a{
+		font-size: 16px;
 	}
-}*/
+}
+
+@media(max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3)),center no-repeat;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+
+	a:hover,a.active{
+		background: none;
+		color: crimson;
+
+	}
+
+	#check:checked ~ ul{
+		left: 0;
+
+	}
+}
+section{
+	background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3)),  url("waterwall.jpg") center no-repeat;
+
+	background-size: cover;
+	height: calc{100vh-80px};
+}
